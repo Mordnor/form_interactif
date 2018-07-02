@@ -1,0 +1,11 @@
+.container {
+    text-align: center;
+    width: 40%;
+}
+
+form {
+    margin-top: 10%;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5%;
+}
