@@ -2,12 +2,16 @@ $(document).ready(function() {
 
     // Verification des mots de passe
     $("#btn_submit").click(verifSubmit)
-
+    var allInputs = $("input");
     function verifSubmit() {
 
-        $("input").each(function(i){
-            if ($("input").val() == false) {
+            $(allInputs).each(function(i){
+            if ($(this).val() == false) {
               $(this).css("border", "1px solid red")
+            }
+            if ($(this).val() == 0){
+                $(this).css("border", "1px solid purple");
+                alert("Veuillez remplir les champs obligatoires")
             }
         });
 
