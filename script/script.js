@@ -46,10 +46,10 @@ function validate() {
   $result.text("");
 
   if (validateEmail(email)) {
-    $result.text(email + " is valid :)");
+    $result.text(email + " is valid ");
     $result.css("color", "green");
   } else {
-    $result.text(email + " is not valid :(");
+    $result.text(email + " is not valid ");
     $result.css("color", "red");
   }
   return false;
