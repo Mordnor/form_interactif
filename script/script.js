@@ -21,5 +21,17 @@ $(document).ready(function() {
         return false;
     }
 
-}
+    // Travel jquery
+
+    $("#allez_retour").click(addInput)
+
+    function addInput(){
+        if(this.checked){
+            $("#back_travel").addClass("d-block").removeClass("d-none");
+        }
+        else if (this.checked != true) {
+            $("#back_travel").addClass("d-none").removeClass("d-block");
+        }
+
+    }
 });

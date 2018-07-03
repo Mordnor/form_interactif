@@ -10,7 +10,7 @@
 
 <body>
     <div class="container">
-        <form class="needs-validation" novalidate>
+        <form id="login" class="needs-validation" novalidate>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="user_pseudo">Pseudo</label>
@@ -34,6 +34,23 @@
             </div>
             <button id="btn_submit" type="submit" class="btn btn-primary">submit</button>
             <button type="reset" class="btn btn-primary">reset</button>
+        </form>
+
+        <form id="travel">
+            <div class="form-group">
+                <label for="date_depart">Date de départ</label>
+                <input type="date" class="form-control" id="date_depart">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="allez_retour">
+                <label class="form-check-label" for="allez_retour">
+         Allez-Retour
+       </label>
+            </div>
+            <div id="back_travel" class="form-group d-none">
+                <label for="date_retour">Date de retour</label>
+                <input type="date" class="form-control " id="date_retour">
+            </div>
         </form>
     </div>
     <script src="node_modules/jquery/dist/jquery.js">

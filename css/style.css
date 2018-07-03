@@ -3,10 +3,26 @@
     width: 40%;
 }
 
-form {
+label {
+    font-size: 1.2em;
+}
+
+#login {
     margin-top: 10%;
     border: 1px solid black;
     border-radius: 20px;
     padding: 5%;
     box-shadow: 8px 10px 11px -3px rgba(0,0,0,0.75);
+}
+
+#travel{
+    margin-top: 10%;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5%;
+    box-shadow: 8px 10px 11px -3px rgba(0,0,0,0.75);
+}
+
+.form-check{
+    text-align: left;
 }
