@@ -14,21 +14,23 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="user_pseudo">Pseudo</label>
-                    <input type="text" class="form-control" id="user_pseudo" placeholder="Nom d'Utilisateur ( 5 caractères minimum )" minlength="5" required>
+                    <input type="text" class="form-control" aria-describedby="pseudo_help" id="user_pseudo" placeholder="Pseudo" minlength="5" required>
+                     <small id="pseudo_help" class="form-text ">5 caractères minimum</small>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" id="email" placeholder="Email" minlength="5" required>
-                    <h6 id="result"></h6>
+                    <small id="result"></small>
                 </div>
             </div>
             <div class="form-group">
                 <label for="input_password">Password</label>
-                <input type="password" class="form-control" id="input_password" placeholder="mdp" minlength="5" required>
+                <input type="password" class="form-control" aria-describedby="password_help" id="input_password" placeholder="******" minlength="5" required>
+                 <small id="password_help" class="form-text ">Une majuscule, un chiffre et 5 caractères minimum</small>
             </div>
             <div class="form-group">
                 <label for="confirm_password">Confirmation du mot de passe</label>
-                <input type="password" class="form-control" id="confirm_password" placeholder="confirmation mdp" minlength="5" required>
+                <input type="password" class="form-control" id="confirm_password" placeholder="******" minlength="5" required>
             </div>
             <button id="validate" type="submit" class="btn btn-primary">submit</button>
             <button type="reset" class="btn btn-primary">reset</button>

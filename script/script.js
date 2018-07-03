@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     // Verification des mots de passe
-    $("#email").click(verifSubmit)
+    $("#validate").click(verifSubmit)
     var allInputs = $("input");
 
     function verifSubmit() {
@@ -9,8 +9,8 @@ $(document).ready(function() {
         // input true or false
         $(allInputs).each(function(i) {
             if ($(this).val() == false) {
-                $(this).css("border", "1px solid red");
-                $(this).attr("placeholder", "Veuillez renseigner ce champ");
+                // $(this).css("border", "1px solid red");
+                $("small").css("color", "red")
             }
         });
 
@@ -46,10 +46,10 @@ function validate() {
   $result.text("");
 
   if (validateEmail(email)) {
-    $result.text(email + " is valid ");
+    $result.text(email + " is valid");
     $result.css("color", "green");
   } else {
-    $result.text(email + " is not valid ");
+    $result.text(email + " is not valid");
     $result.css("color", "red");
   }
   return false;
