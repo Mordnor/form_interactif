@@ -15,13 +15,11 @@
                 <div class="form-group col-md-6">
                     <label for="user_pseudo">Pseudo</label>
                     <input type="text" class="form-control" id="user_pseudo" placeholder="Nom d'Utilisateur ( 5 caractères minimum )" minlength="5" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="input_email">Email</label>
-                    <input type="email" class="form-control" id="input_email" placeholder="Email" minlength="5" required>
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email" minlength="5" required>
+                    <h6 id="result"></h6>
                 </div>
             </div>
             <div class="form-group">
@@ -32,7 +30,7 @@
                 <label for="confirm_password">Confirmation du mot de passe</label>
                 <input type="password" class="form-control" id="confirm_password" placeholder="confirmation mdp" minlength="5" required>
             </div>
-            <button id="btn_submit" type="submit" class="btn btn-primary">submit</button>
+            <button id="validate" type="submit" class="btn btn-primary">submit</button>
             <button type="reset" class="btn btn-primary">reset</button>
         </form>
 
@@ -56,6 +54,7 @@
     <script src="node_modules/jquery/dist/jquery.js">
     </script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="script/script.js">
     </script>
 </body>
