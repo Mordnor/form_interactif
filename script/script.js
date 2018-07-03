@@ -20,11 +20,6 @@ $(document).ready(function() {
         }
         return false;
     }
-    // verification du pseudo
-    $("#user_pseudo").focus(verifPseudo)
 
-    function verifPseudo() {
-
-    }
-
+}
 });
